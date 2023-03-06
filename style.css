@@ -54,7 +54,6 @@ li.nav-list-item:hover ul {
 /* Drop down items from the About menu targeted as a whole */
 
 ul.nav-list-drop {
-    /* need to research this */
     position:absolute;
     top:4rem;
     left:-1rem;
