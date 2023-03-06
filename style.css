@@ -5,6 +5,7 @@ body {
 .nav {
     position:fixed;
     width:100vw;
+    box-shadow: 0 0 10px light grey;
 }
 
 /* targetting the whole navigation menu */
