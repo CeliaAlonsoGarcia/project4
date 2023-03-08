@@ -5,13 +5,14 @@ body {
 .nav {
     position:fixed;
     width:100vw;
-    box-shadow: 0 0 10px light grey;
+    box-shadow: 0 0 20px light grey;
+    font-size:x-large;
 }
 
 /* targetting the whole navigation menu */
 ul.nav-list {
  display:flex;
- justify-content: flex-end;
+ justify-content: space-around;
  align-items: center;
  gap: 2rem;
  margin: 0 2rem;
@@ -61,7 +62,7 @@ ul.nav-list-drop {
     box-shadow: 0 0 10px grey;
     background-color:white;
     border-radius:1rem;
-    width:12rem;
+    width:17rem;
     padding:1rem;
     display:flex;
     flex-direction:column;
@@ -80,7 +81,7 @@ ul.nav-list-drop li {
     
 ul.nav-list-drop li:hover {
      background-color: lightcyan;
-     border-radius:3rem;
+     border-radius:1rem;
    
     }
     
