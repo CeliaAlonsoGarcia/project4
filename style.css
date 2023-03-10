@@ -1,5 +1,10 @@
 body {
     font-family:Montserrat, sans-serif;
+    padding: 70px;
+}
+
+.hidden {
+    display:none;
 }
 
 .nav {
@@ -7,6 +12,8 @@ body {
     width:100vw;
     box-shadow: 0 0 20px light grey;
     font-size:x-large;
+
+   
 }
 
 /* targetting the whole navigation menu */
@@ -87,4 +94,7 @@ ul.nav-list-drop li:hover {
     
 
 
-    
+     main {
+        margin-top: 100px; /* Add a top margin to push the main content below the nav */
+      
+      } 
