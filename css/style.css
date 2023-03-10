@@ -3,6 +3,7 @@ body {
     padding: 70px;
 }
 
+/* text that appears when you click the button "Read More" on the Home page*/
 .hidden {
     display:none;
 }
@@ -10,7 +11,7 @@ body {
 .nav {
     position:fixed;
     width:100vw;
-    box-shadow: 0 0 20px light grey;
+    box-shadow: 20px light grey;
     font-size:x-large;
 }
 
@@ -91,10 +92,10 @@ ul.nav-list-drop li:hover {
    
     }
     
-/* a {
+a {
         color: inherit; 
         text-decoration: inherit; 
-      } */
+      }
 
  main {
         margin-top: 100px; /* Add a top margin to push the main content below the nav */
