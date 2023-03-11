@@ -2,6 +2,11 @@
     box-sizing: border-box;
   }
 
+  body {
+    font-family:Montserrat, sans-serif;
+    padding: 80px;
+}
+
 header {
     text-align: center;
     padding: 20px;
@@ -10,6 +15,7 @@ header {
     border: solid;
     border-color: white;
     border-width: 10px;
+    border-radius: 1rem;
 }
 
 .project {

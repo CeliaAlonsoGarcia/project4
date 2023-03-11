@@ -5,7 +5,7 @@
 
 const btn = document.getElementById('myButton');
 btn.addEventListener('click', (e) => {
-  text2.classList.toggle('hidden');
+  textHome.classList.toggle('hidden');
 });
 
 

@@ -1,6 +1,6 @@
 body {
     font-family:Montserrat, sans-serif;
-    padding: 70px;
+    padding-top: 70px;
 }
 
 /* text that appears when you click the button "Read More" on the Home page*/
@@ -10,20 +10,23 @@ body {
 
 .nav {
     position:fixed;
-    width:100vw;
-    box-shadow: 20px light grey;
+    width:100%;
+    box-shadow: 20px lightgrey;
     font-size:x-large;
+    /* top: 0, so that the nav bar stays on the top */
+    top: 0;
     background-color: lightcyan;
+    border-radius: 0.5rem;
+    padding: 0 0rem;
 }
-
-
 /* targetting the whole navigation menu */
 ul.nav-list {
  display:flex;
- justify-content: space-around;
+ justify-content: flex-start;
  align-items: center;
  gap: 2rem;
  margin: 0 2rem;
+
 }
 
 /* targetting the main three words: About, Projects & Contact */
@@ -94,11 +97,11 @@ ul.nav-list-drop li:hover {
     }
     
 a {
-        color: inherit; 
-        text-decoration: inherit; 
-      }
+    color: inherit; 
+    text-decoration: inherit; 
+    }
 
- main {
+ /* main {
         margin-top: 100px; /* Add a top margin to push the main content below the nav */
       
-      } 
+       */
