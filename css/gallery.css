@@ -41,8 +41,9 @@ button {
     width: 100px;
     margin: auto;
     display: block;
-
+    cursor:pointer;
 }
+
 
 
 .card {
@@ -98,3 +99,29 @@ p {
 }
 
 
+.buttonGroup {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-content: flex-start;
+    cursor:pointer;
+
+    
+}
+
+.projectBtn, .repoBtn {
+    background-color: rgba(251, 202, 224, 0.306);
+    color: rgb(64, 58, 58);
+    box-shadow: 0 5px rgb(220, 216, 216);
+}
+
+.projectBtn:hover, .repoBtn:hover {
+    color: rgba(138, 60, 73, 0.957);
+    border-color: currentColor;
+    background-color: white;
+  }
+
+.projectBtn:active, .repoBtn:active{
+    transform: translateY(1px);
+    filter: saturate(150%);
+  }
