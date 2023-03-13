@@ -1,28 +1,35 @@
+/* FOR ALL PAGES */
+
 body {
     font-family:Montserrat, sans-serif;
-    padding-top: 70px;
-}
-
-/* text that appears when you click the button "Read More" on the Home page*/
-.hidden {
-    display:none;
+    padding: 70px;
 }
 
 .nav {
-    position:fixed;
+    /* position:fixed; if i remove it the nav bar moves but it looks okay */
     width:100%;
-    box-shadow: 20px lightgrey;
     font-size:x-large;
-    /* top: 0, so that the nav bar stays on the top */
-    top: 0;
+    /* top: 0;  top: 0, so that the nav bar stays on the top */
     background-color: lightcyan;
     border-radius: 0.5rem;
-    padding: 0 0rem;
+    padding: 2rem 0rem;
+    margin-top: 1rem;
+    transition: top 0.3s; /* Transition effect when sliding down (and up) */
+    
+}
+
+.navlog {
+    list-style:none;
+
+}
+.navlog img {
+    height: 4rem;
+    list-style:none;
 }
 /* targetting the whole navigation menu */
 ul.nav-list {
  display:flex;
- justify-content: flex-start;
+ justify-content: flex-end;
  align-items: center;
  gap: 2rem;
  margin: 0 2rem;
@@ -63,7 +70,6 @@ li.nav-list-item:hover ul {
     visibility:visible;  
 }
 
-
 /* Drop down items from the About menu targeted as a whole */
 
 ul.nav-list-drop {
@@ -93,15 +99,132 @@ ul.nav-list-drop li {
 ul.nav-list-drop li:hover {
      background-color: lightcyan;
      border-radius:1rem;
-   
     }
-    
+  
+/* Removing the style of the hyperlinks */
 a {
     color: inherit; 
     text-decoration: inherit; 
     }
 
- /* main {
-        margin-top: 100px; /* Add a top margin to push the main content below the nav */
-      
-       */
+ main {
+        margin: 5rem 7rem; /* Add a top margin to push the main content below the nav */
+ }
+
+ /* styling of the main picture on the home page */
+ .snow {
+    
+        width: 100%;
+        height: 40rem;
+        object-fit: cover;
+        justify-content: center; 
+        display: block;
+       
+ }
+
+ /* text that appears when you click the button "Read More" on the Home page*/
+.hidden {
+    display:none;
+}
+
+ #myButton {
+    border: solid;
+    border-width: 0.2rem;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 0.5rem;  
+    height: 4rem;
+    width: 8rem;
+    display: block;
+    cursor:pointer;
+    background-color: white;
+    color: rgb(64, 58, 58);
+    box-shadow: 0 5px rgb(220, 216, 216);
+    border-color: rgba(3, 38, 17, 0.752);;
+}
+
+#myButton:hover {
+    color: rgba(3, 38, 17, 0.752);
+    border-color: currentColor;
+    background-color: rgba(200, 219, 190, 0.2);
+  }
+
+#myButton:active{
+    transform: translateY(1px);
+    filter: saturate(150%);
+  }
+
+/* FOR CONTACT PAGE */
+
+.titleContactPage {
+    font-size: 5.5rem;
+    line-height: 4rem;
+    margin: 0;
+    padding: 3rem 1rem;
+    background: rgba(242, 237, 229, 0.5);
+    color: rgba(100, 114, 73, 1);
+    border-radius: 1rem;
+    text-align: center;
+  }
+  .big {
+    font-size: 5.5rem;
+    line-height: 4rem;
+    margin: 0;
+    padding: 3rem 1rem;
+    
+    color: #246D7C;
+  }
+  
+  .small {
+    font-size: 3rem;
+  }
+
+  #contactPageBody {
+    background-image: url("../pictures/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  /* #contactVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  } */
+
+  /* FOR PROGRESS PAGE */
+
+/* style for the expandable question */
+  .accordion {
+    background-color: rgba(171, 21, 168, 0.278);
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    margin-bottom:10px;
+    border-radius: 2rem;
+}
+
+/* background color change when clicked or hovered */
+.accordion.active, .accordion:hover {
+    background-color: rgba(171, 21, 169, 0.472);
+}
+
+/* Unicode character for "plus" sign (+) */
+.accordion:after {
+    content: '\2795'; 
+    font-size: 20px;
+    color: #777;
+    float: right;
+    margin: 0.3rem 1.5rem;
+}
+
+/* Unicode character for "minus" sign (-) */
+.accordion.active:after {
+    content: "\2796"; 
+}
