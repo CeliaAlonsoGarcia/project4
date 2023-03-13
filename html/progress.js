@@ -8,9 +8,8 @@ const accordions = document.querySelectorAll(".accordion");
 accordions.forEach(accordion => {
   accordion.addEventListener("click", () => {
     accordion.classList.toggle("active");
-    const panel2 = accordion.nextElementSibling;
-    console.log(panel2);
-    panel2.style.display = panel2.style.display === "block" ? "none" : "block";
+    const panel = accordion.nextElementSibling;
+    panel.style.display = panel.style.display === "block" ? "none" : "block";
     
   });
 });
