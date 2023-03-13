@@ -112,14 +112,14 @@ a {
  }
 
  /* styling of the main picture on the home page */
- .snow {
+ .snow img {
     
         width: 100%;
-        height: 40rem;
+        height: 35rem;
         object-fit: cover;
         justify-content: center; 
         display: block;
-       
+        border-radius: 0.3rem;
  }
 
  /* text that appears when you click the button "Read More" on the Home page*/
@@ -180,18 +180,11 @@ a {
   }
 
   #contactPageBody {
-    background-image: url("../pictures/background.jpg");
+    background-image: url("../pictures/contact/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   }
 
-  /* #contactVideo {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-  } */
 
   /* FOR PROGRESS PAGE */
 
@@ -208,6 +201,12 @@ a {
     transition: 0.4s;
     margin-bottom:10px;
     border-radius: 2rem;
+}
+
+/* hidding the text on panel */
+
+.panel {
+    display: none;
 }
 
 /* background color change when clicked or hovered */
